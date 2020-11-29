@@ -1,0 +1,16 @@
+@import './sharedStyles.scss';
+
+.wrapper {
+    max-width: 1000px;
+}
+
+.title {
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+}
+
+.content {
+    grid-column: 1/14;
+    //border: 1px solid black;
+    //border-radius: 20px;
+}

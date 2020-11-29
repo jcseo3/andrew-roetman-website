@@ -1,7 +1,47 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from '../styles/Home.module.scss';
 
-export default function Home() {
+const Home = () => {
+  return (
+    <div className={styles.globalPageWrapper}>
+      <div className={styles.leftColumn}>
+          <div className={styles.globalTitle}>
+            Andrew Roetman
+          </div>
+        <div className={styles.links}>
+          <div className={styles.link}>
+            <Link href="/clinical-psychology">
+              <a>
+                Prospective Clinical Psychology Ph.D Candidate
+              </a>
+            </Link>
+          </div>
+          <div className={styles.link}>
+            <Link href="/life-coaching" className={styles.link}>
+              <a>
+                Life Coach
+              </a>
+            </Link>
+          </div>
+          <div className={styles.link}>
+            <Link href="/writing" className={styles.link}>
+              <a>
+                Writings
+              </a>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className={styles.globalImageWrapper}>
+          <img src="/images/tea-hand.jpg" alt="a man's hand is holding out tea as an offer"/>
+        </div>
+    </div>
+  )
+  /*
+  <Image src="/images/tea-hand.jpg" alt="a man's hand is holding out tea as an offer" width={500} height={500} />
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -15,7 +55,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Get started by editing{' '} NAH
           <code className={styles.code}>pages/index.js</code>
         </p>
 
@@ -61,5 +101,8 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  )*/
 }
+
+
+export default Home; 

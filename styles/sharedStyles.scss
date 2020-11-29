@@ -1,0 +1,79 @@
+
+@import './settings.scss';
+
+.globalPageWrapper {
+  @include min-width(large) {
+    display: grid;
+  }
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+  }
+
+  .globalRightColumn {
+    position: relative;
+    grid-column: 6/13;
+  }
+
+  .globalEyebrow {
+      //text-align: center;
+  }
+
+  .globalTitle {
+    padding: 10px 0;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-decoration: none;
+
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    text-align: center;
+    @include min-width(large) {
+      font-size: 50px;
+    }
+}
+
+.globalImageWrapper {
+    min-height: 100vh;
+    grid-column: 5/13;
+    animation: 1s ease-out 0s 1 fadein;
+    img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @include min-width(large) {
+      position: relative;
+    }
+}
+
+.globalBacktoHome {
+  position: absolute;
+  bottom: 30px;
+  text-decoration: underline;
+  font-size: 18px;
+  left: 30px;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-20%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes fadein {
+    from { opacity: 0}
+    to   { opacity: 1}
+  }

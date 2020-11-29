@@ -1,0 +1,79 @@
+
+$breakpoints: (
+    small: (
+      width: 360px,
+      height: 500px,
+    ),
+    small-plus: (
+      width: 500px,
+      height: 500px,
+    ),
+    medium: (
+      width: 600px,
+      height: 600px,
+    ),
+    medium-plus: (
+      width: 800px,
+      height: 800px,
+    ),
+    large: (
+      width: 1000px,
+      height: 700px,
+    ),
+    xlarge: (
+      width: 1200px,
+      height: 800px,
+    ),
+    xxlarge: (
+      width: 1600px,
+      height: 1000px,
+    ),
+    xxxlarge: (
+      width: 1800px,
+      height: 1000px,
+    ),
+  );
+  
+  @function breakpoint-width($name) {
+    @return map-get(map-get($breakpoints, $name), width);
+  }
+  
+  @function breakpoint-height($name) {
+    @return map-get(map-get($breakpoints, $name), height);
+  }
+  
+  @mixin min-width($breakpoint) {
+    @media (min-width: breakpoint-width($breakpoint)) {
+      @content;
+    }
+  }
+  
+  @mixin min-height($breakpoint) {
+    @media (min-height: breakpoint-height($breakpoint)) {
+      @content;
+    }
+  }
+  
+  @mixin max-width($breakpoint) {
+    @media (max-width: breakpoint-width($breakpoint) - 1) {
+      @content;
+    }
+  }
+  
+  @mixin max-width-or-height($breakpoint) {
+    @media (max-width: breakpoint-width($breakpoint)), (max-height: breakpoint-height($breakpoint)) {
+      @content;
+    }
+  }
+  
+  @mixin min-width-and-height($breakpoint) {
+    @media (min-width: breakpoint-width($breakpoint)) and (min-height: breakpoint-height($breakpoint)) {
+      @content;
+    }
+  }
+  
+  @mixin min-width-max-width($minBreakpoint, $maxBreakpoint) {
+    @media (min-width: breakpoint-width($minBreakpoint)) and (max-width: breakpoint-width($maxBreakpoint)) {
+      @content;
+    }
+  }
