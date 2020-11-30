@@ -7,6 +7,9 @@
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
+    @include max-width(medium) {
+        font-size: 12px;
+    }
 }
 
 .title {
@@ -59,5 +62,13 @@
 .tags {
     span:first-child {
         margin-left: 20px;
+    }
+    @include max-width(medium) {
+        span {
+            display: none;
+        }
+        span:first-child {
+            display: block;
+        }
     }
 }

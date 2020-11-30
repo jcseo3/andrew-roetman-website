@@ -19,7 +19,7 @@ const navOptions = [
     description: (<><img className={styles.image} src="images/tea-cup.jpg" alt="a bright lightbulb lies lit up on a fluffy carpet" />
     <div className={styles.textWrapper}>
       <div className={styles.introContent}>
-      <p>Please contact me with questions or
+      <p>Contact me with questions or
     schedule your first complimentary 30-minute session <a className={styles.button} href="mailto:roetmann@gmail.com">
     here
   </a></p>
@@ -43,7 +43,7 @@ const LifeCoaching = () => {
         <div className={classnames(styles.globalTitle, styles.title)}>
             Andrew Roetman
         </div>
-        <BacktoHomeButton />
+        
       </div>
       <div className={styles.menuBar}>
         {navOptions.map((option, i) =>
@@ -55,6 +55,7 @@ const LifeCoaching = () => {
        <div className={styles.content}>
           {navOptions[currentIndex].description}
       </div>
+      <BacktoHomeButton />
     </div>
   )
 }
