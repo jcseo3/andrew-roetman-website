@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import classnames from 'classnames';
-import styles from '../../styles/ExpandableListings.module.scss';
+import styles from '../styles/ExpandableListings.module.scss';
 import ExpandableListing from './ExpandableListing';
 
 const ExpandableListings = ({ list }) => {

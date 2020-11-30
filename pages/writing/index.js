@@ -1,7 +1,6 @@
-import Link from 'next/Link';
 import classnames from 'classnames';
-import ExpanableListings from '../components/ExpandableListings';
-import BacktoHomeButton from '../components/BacktoHomeButton';
+import ExpanableListings from '../../components/ExpandableListings';
+import BacktoHomeButton from '../../components/BacktoHomeButton';
 
 import styles from '../../styles/writing.module.scss';
 

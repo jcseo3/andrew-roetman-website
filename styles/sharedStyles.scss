@@ -30,7 +30,7 @@
     letter-spacing: 3px;
     text-decoration: none;
 
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+    //animation: 1s ease-out 0s 1 slideInFromLeft;
     text-align: center;
     @include min-width(large) {
       font-size: 50px;
@@ -40,7 +40,7 @@
 .globalImageWrapper {
     min-height: 100vh;
     grid-column: 5/13;
-    animation: 1s ease-out 0s 1 fadein;
+    //animation: 1s ease-out 0s 1 fadein;
     img {
         position: absolute;
         top: 0;
@@ -55,6 +55,7 @@
     }
 }
 
+/*
 .globalBacktoHome {
   position: absolute;
   bottom: 30px;
@@ -62,7 +63,7 @@
   font-size: 18px;
   left: 30px;
 }
-
+*/
 
 @keyframes slideInFromLeft {
     0% {

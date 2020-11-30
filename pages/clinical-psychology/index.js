@@ -1,7 +1,6 @@
-import Link from 'next/Link';
-import classnames from 'classnames';
-import BacktoHomeButton from '../components/BacktoHomeButton';
-import CV from '../components/docs/CV';
+import Link from 'next/link';
+import BacktoHomeButton from '../../components/BacktoHomeButton';
+import CV from '../../components/docs/CV';
 import styles from '../../styles/clinical-psychology.module.scss';
 
 const ClinicalPsychology = () => {

@@ -1,6 +1,6 @@
 import styles from '../../styles/life-coaching.module.scss';
 import classnames from 'classnames';
-import BacktoHomeButton from '../components/BacktoHomeButton';
+import BacktoHomeButton from '../../components/BacktoHomeButton';
 import {useState} from 'react';
 
 const navOptions = [
