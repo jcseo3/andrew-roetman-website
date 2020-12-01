@@ -14,7 +14,9 @@ const ClinicalPsychology = () => {
             <div className={styles.cvLink}>
               Download my CV <Link href=""><a>here</a></Link>
             </div>
-            <BacktoHomeButton />
+            <div className={styles.backButtonWrapper}>
+              <BacktoHomeButton />
+            </div>
           </div>
           <div className={styles.globalRightColumn}>
             <CV />

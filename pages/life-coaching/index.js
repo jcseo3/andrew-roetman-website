@@ -8,10 +8,10 @@ const navOptions = [
     displayName: 'services',
     description: (<><img className={styles.image} src="images/teapot.jpg" alt="a bright lightbulb lies lit up on a fluffy carpet" />
     <div className={styles.textWrapper}>
-      <div className={styles.introContent}>
+      <p className={styles.introContent}>
         Hello! Welcome to my crib.
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
+      </p>
     </div></>),
   },
   {
@@ -55,7 +55,9 @@ const LifeCoaching = () => {
        <div className={styles.content}>
           {navOptions[currentIndex].description}
       </div>
-      <BacktoHomeButton />
+      <div className={styles.backButtonWrapper}>
+              <BacktoHomeButton />
+            </div>
     </div>
   )
 }

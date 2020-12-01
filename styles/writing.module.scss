@@ -1,6 +1,21 @@
 @import './sharedStyles.scss';
 
+.container {
+    background-color: #fbfaf5;
+    min-height: 100vh;
+}
 .wrapper {
+    @include min-width(large) {
+        display: grid;
+        //padding: 0 30px;
+    }
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    //max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 30px 100px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
     max-width: 1000px;
 }
 

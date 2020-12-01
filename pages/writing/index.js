@@ -20,13 +20,15 @@ const writings = [
 
 const Writing = () => {
     return (
-        <div className={classnames(styles.globalPageWrapper, styles.wrapper)}>
+      <div className={styles.container}>
+        <div className={styles.wrapper}>
           <div className={classnames(styles.globalTitle, styles.title)}>Writings</div>
           <div className={styles.content}>
             <ExpanableListings list={writings} />
           </div>
           <BacktoHomeButton />
         </div>
+      </div>
     )
 }
 

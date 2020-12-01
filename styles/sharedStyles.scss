@@ -4,12 +4,13 @@
 .globalPageWrapper {
   @include min-width(large) {
     display: grid;
+    //padding: 0 30px;
   }
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
-    max-width: 1600px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 30px 30px 100px 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
   }
@@ -25,7 +26,7 @@
 
   .globalTitle {
     padding: 10px 0;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
     letter-spacing: 3px;
     text-decoration: none;
@@ -33,7 +34,7 @@
     //animation: 1s ease-out 0s 1 slideInFromLeft;
     text-align: center;
     @include min-width(large) {
-      font-size: 50px;
+      font-size: 32px;
     }
 }
 

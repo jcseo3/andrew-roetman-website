@@ -2,8 +2,8 @@
   
 .portrait {
     display: block;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     object-position: 20% 10%;
     border-radius: 50%;
@@ -14,7 +14,6 @@
 }
 
 .container {
-    position: relative;
     z-index: 9;
     grid-column: 1/5;
     font-size: 20px;
@@ -25,6 +24,7 @@
     flex-direction: column;
     //display: flex;
     //justify-content: initial;
+    //padding-top: 30px;
 
     img {
         align-self: center;
@@ -32,6 +32,7 @@
     @include min-width(large) {
         padding-top: 60px;
         margin-top: 60px;
+        position: relative;
     }
 }
 
@@ -40,4 +41,11 @@
     a {
         text-decoration: underline;
     }
+}
+
+.backButtonWrapper {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    left: 30px;
 }

@@ -16,5 +16,9 @@ a {
 }
 
 p {
-  font-size: 20px;
+  font-size: 16px;
+}
+
+div {
+  font-size: 12px;
 }

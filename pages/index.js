@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.scss';
 
 const Home = () => {
   return (
-    <div className={styles.globalPageWrapper}>
+    <div className={styles.wrapper}>
       <div className={styles.leftColumn}>
           <div className={styles.globalTitle}>
             Andrew Roetman
@@ -14,7 +14,7 @@ const Home = () => {
           <div className={styles.link}>
             <Link href="/clinical-psychology">
               <a>
-                Prospective Clinical Psychology Ph.D Candidate
+                Prospective Clinical Psychology Ph.D. Candidate
               </a>
             </Link>
           </div>
