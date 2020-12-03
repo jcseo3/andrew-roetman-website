@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import BacktoHomeButton from '../../components/BacktoHomeButton';
 import CV from '../../components/docs/CV';
+//import pdf from '../../public/Andrew Roetman-CV_11-2020.pdf';
 import styles from '../../styles/clinical-psychology.module.scss';
 
 const ClinicalPsychology = () => {
@@ -12,7 +13,7 @@ const ClinicalPsychology = () => {
               Hi! I'm Andrew and I am a prospective clinical psychology Ph.D. student passionate about ... My areas of interest particularly are in ...
             </p>
             <div className={styles.cvLink}>
-              Download my CV <Link href=""><a>here</a></Link>
+              Download my CV <Link href=""><a href="Andrew Roetman-CV_11-2020.pdf" target = "_blank">here</a></Link>
             </div>
             <div className={styles.backButtonWrapper}>
               <BacktoHomeButton />
