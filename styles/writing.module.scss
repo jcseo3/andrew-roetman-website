@@ -3,6 +3,7 @@
 .container {
     background-color: #fbfaf5;
     min-height: 100vh;
+    animation: expand .8s ease forwards;
 }
 .wrapper {
     @include min-width(large) {

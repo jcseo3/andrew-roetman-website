@@ -43,7 +43,6 @@ const LifeCoaching = () => {
         <div className={classnames(styles.globalTitle, styles.title)}>
             Andrew Roetman
         </div>
-        
       </div>
       <div className={styles.menuBar}>
         {navOptions.map((option, i) =>
@@ -56,8 +55,8 @@ const LifeCoaching = () => {
           {navOptions[currentIndex].description}
       </div>
       <div className={styles.backButtonWrapper}>
-              <BacktoHomeButton />
-            </div>
+        <BacktoHomeButton />
+      </div>
     </div>
   )
 }

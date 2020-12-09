@@ -156,6 +156,7 @@
 }*/
 
 .wrapper {
+  animation: expandBackwards .8s ease forwards;
   @include min-width(large) {
     display: grid;
   }
