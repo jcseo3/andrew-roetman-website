@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import styles from '../styles/ExpandableListings.module.scss';
-import ExpandableListing from './ExpandableListing';
+import styles from './ExpandableListings.module.scss';
+import ExpandableListing from '../ExpandableListing';
 
 const ExpandableListings = ({ list }) => {
     const [currentIndex, setCurrentIndex] = useState(0);

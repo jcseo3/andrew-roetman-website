@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/BacktoHomeButton.module.scss';
+import styles from './BacktoHomeButton.module.scss';
 
 const BacktoHomeButton = () => (
      <div className={styles.wrapper}>

@@ -1,0 +1,33 @@
+@import '../../../styles/sharedStyles.scss';
+
+.instructions {
+    font-size: 10px;
+    @include min-width(medium) {
+        font-size: 12px;
+    }
+    @include max-width(medium) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.textWrapper {
+    @include min-width(medium) {
+        display: flex;
+    }
+
+    > div {
+        flex: 1;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+.imageWrapper {
+    @include max-width(medium) {
+        display: flex;
+        justify-content: center;
+    }
+}

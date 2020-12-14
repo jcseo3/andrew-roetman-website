@@ -1,5 +1,9 @@
-@import './sharedStyles.scss';
+@import '../../styles/sharedStyles.scss';
   
+.outerWrapper {
+    border: 1px solid color(black-soft);
+}
+
 .portrait {
     display: block;
     width: 250px;
@@ -15,7 +19,6 @@
 
 .container {
     z-index: 9;
-    grid-column: 1/5;
     font-size: 20px;
     //animation: expand .8s ease forwards;
   
@@ -30,9 +33,15 @@
     img {
         align-self: center;
     }
+}
+
+.wrapper {
+    grid-column: 1/5;
+    background: #f2f2f2;
     @include min-width(large) {
-        padding-top: 60px;
-        margin-top: 60px;
+        /*padding-top: 60px;
+        margin-top: 60px;*/
+        padding: 60px 30px;
         position: relative;
     }
 }

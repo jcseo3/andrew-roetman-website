@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import classnames from 'classnames';
-import styles from '../styles/ExpandableListing.module.scss';
+import styles from './ExpandableListing.module.scss';
 
 const ExpandableListing = ({ item }) => {
     const [showContent, setShowContent] = useState(false);

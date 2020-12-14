@@ -1,4 +1,4 @@
-@import './sharedStyles.scss';
+@import '../../styles/sharedStyles.scss';
 
 .container {
     background-color: #fbfaf5;
@@ -15,12 +15,24 @@
     //max-width: 1280px;
     margin: 0 auto;
     padding: 30px 30px 100px 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Lato; //'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
     max-width: 1000px;
 }
 
 .title {
+    padding: 10px 0;
+    font-size: 25px;
+    font-family: Raleway;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-decoration: none;
+
+    //animation: 1s ease-out 0s 1 slideInFromLeft;
+    //text-align: center;
+    @include min-width(medium) {
+      font-size: 32px;
+    }
     padding-bottom: 30px;
     margin-bottom: 60px;
 }

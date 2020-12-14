@@ -1,0 +1,15 @@
+@import url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/cs');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
+
+/* can now reference my font */
+body {
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: Lato;
+  }
+  
+  /* my custom css */
+
+  h1, h2, h3, h4, h5 {
+    font-family: Roboto;
+    font-family: Raleway;
+  }

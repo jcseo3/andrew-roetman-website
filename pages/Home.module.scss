@@ -122,7 +122,7 @@
 }
 */
 
-@import './sharedStyles.scss';
+@import '../styles/sharedStyles.scss';
 
 /*
 .container {
@@ -168,7 +168,7 @@
     max-width: 1280px;
     margin: 0 auto;
     //padding: 30px 30px 100px 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
   }
 

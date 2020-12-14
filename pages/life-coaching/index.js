@@ -1,4 +1,4 @@
-import styles from '../../styles/life-coaching.module.scss';
+import styles from './life-coaching.module.scss';
 import classnames from 'classnames';
 import BacktoHomeButton from '../../components/BacktoHomeButton';
 import {useState} from 'react';
