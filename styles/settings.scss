@@ -1,4 +1,37 @@
 
+$colors: (
+  black-true: #000000,
+  black-soft: #2d2e2f,
+  white-soft: #f2f2f2,
+  /*black-softest: #222222,
+  black-translucent: rgba(#000000, 0.81),
+  black-soft-translucent: rgba(#2d2e2f, 0.4),
+  gray-cool: #dbdee1,
+  gray-warm-light: #dfdedd,
+  gray-lighter: #c8c8c8,
+  gray-light: #adadad,
+  gray-base: #757575,
+  gray-cool-dark: #585c62,
+  gray-medium-lighter: #565656,
+  gray-medium: #4F4F4F,
+  gray-dark: #353535,
+  gray-translucent: rgba(#242424, 0.1),
+  highlight: #dc453e,
+  highlight-on-dark: #e15149,
+  white-true: #ffffff,
+  white-soft: #f0f0f0,
+  white-light: #e8e8e8,
+  white-dull: #e1e1e1,
+  white-soft-translucent: rgba(#f0f0f0, 0.4),
+  white-soft-translucent-on-dark: rgba(#f0f0f0, 0.66),
+  white-dull-translucent: rgba(#e1e1e1, 0.25),
+  green: #009E52,*/
+);
+
+@function color($name) {
+  @return map-get($colors, $name);
+}
+
 $breakpoints: (
     small: (
       width: 360px,
