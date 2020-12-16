@@ -7,18 +7,6 @@ const CV = () => (
             <p>
             Research Assistant, Administrative Assistant, Life Coach
             </p>
-
-<h3>Contact Info</h3>
-<h4>
-447 Westview Place,<br/>
-Fort Lee, NJ 07024<br/>
-roetmann@gmail.com<br/>
-(516) 413 - 8199 (Cell)<br/>
-roetmann@gmail.com<br/>
-andrew-roetman.com<br/>
-            </h4>
-
-
             <br />
 <h2>Summary of Interests</h2>
 <div>Highly organized and detail-oriented prospective doctoral student seeking professional research and clinical training. My research interests include working with multicultural communities and studying how social determinants of health impact health outcomes.</div>
