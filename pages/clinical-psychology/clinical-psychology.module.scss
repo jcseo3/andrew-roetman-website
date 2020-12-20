@@ -37,12 +37,12 @@
 
 .wrapper {
     grid-column: 1/5;
-    background: color(white-soft);
     @include min-width(large) {
         /*padding-top: 60px;
         margin-top: 60px;*/
         padding: 60px 30px;
         position: relative;
+        background: color(white-soft);
     }
 }
 
