@@ -21,7 +21,7 @@ const ClinicalPsychology = () => {
             </div>
             </div>
           </div>
-          <div className={styles.globalRightColumn}>
+          <div className={styles.rightColumn}>
             <CV />
           </div>
         </div>

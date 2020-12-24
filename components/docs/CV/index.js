@@ -1,6 +1,8 @@
+import React from 'react';
+import styles from './CV.module.scss';
 
 const CV = () => (
-        <div>
+        <div className={styles.wrapper}>
             <h1>
             Andrew Roetman
             </h1>

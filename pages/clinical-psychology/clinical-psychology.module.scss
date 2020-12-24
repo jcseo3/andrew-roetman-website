@@ -1,7 +1,9 @@
 @import '../../styles/sharedStyles.scss';
   
 .outerWrapper {
-    //border: 1px solid color(black-soft);
+    grid-gap: 0;
+    /*background: color(white-soft);
+    padding: 0;*/
 }
 
 .portrait {
@@ -32,6 +34,7 @@
 
     img {
         align-self: center;
+        filter: grayscale(1);
     }
 }
 
@@ -42,7 +45,10 @@
         margin-top: 60px;*/
         padding: 60px 30px;
         position: relative;
-        background: color(white-soft);
+        //background: color(white-soft);
+        background: #ff3627;
+        color: white;
+        border-radius: 10px;
     }
 }
 
@@ -58,4 +64,11 @@
     bottom: 30px;
     width: 100%;
     left: 30px;
+}
+
+.rightColumn {
+    position: relative;
+    grid-column: 5/13;
+    background: color(white-soft);
+    border-radius: 10px;
 }
