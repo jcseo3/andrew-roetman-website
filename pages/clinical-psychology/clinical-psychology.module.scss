@@ -4,6 +4,10 @@
     grid-gap: 0;
     /*background: color(white-soft);
     padding: 0;*/
+    @include max-width(medium) {
+        /*background: #ff3627;
+        color: white;*/
+    }
 }
 
 .portrait {
@@ -69,6 +73,11 @@
 .rightColumn {
     position: relative;
     grid-column: 5/13;
-    background: color(white-soft);
-    border-radius: 10px;
+    display: none;
+
+    @include min-width(large) {
+        background: color(white-soft);
+        border-radius: 10px;
+        display: block;
+    }
 }
