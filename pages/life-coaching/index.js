@@ -1,17 +1,23 @@
 import styles from './life-coaching.module.scss';
 import classnames from 'classnames';
 import BacktoHomeButton from '../../components/BacktoHomeButton';
+import ToggleTruncation from '../../components/ToggleTruncation';
 import {useState} from 'react';
 
 const navOptions = [
   {
     displayName: 'services',
-    description: (<><img className={styles.image} src="images/teapot.jpg" alt="a bright lightbulb lies lit up on a fluffy carpet" />
-    <div className={styles.textWrapper}>
-      <p className={styles.introContent}>
-      Zen Buddhist philosophy informs the structure of my approach to coaching. I’ve worked with several clients to create sustainable strategies for achieving both short and long term life goals. Before developing actionable goals, I listen deeply and without judgement. When appropriate, I offer insights grounded in honesty, vulnerability and mindfulness that facilitate my clients to develop the tools they need to better process many kinds of life’s stressors. Over a series of sessions tailored to the needs of my clients, my objective is to disentangle any cognitive dissonance that otherwise inhibits self acceptance and self love to promote proactive, concrete lifestyle choices. If you’re interested in some of these ideas and want to learn more about the services I offer, please contact me to schedule a free, 30-minute introductory and informational session.
-      </p>
-    </div></>),
+    description: (
+    <>
+      <img className={styles.image} src="images/teapot.jpg" alt="a bright lightbulb lies lit up on a fluffy carpet" />
+      <div className={styles.textWrapper}>
+        <p className={styles.introContent}>
+          <ToggleTruncation charLimit={400}>
+            Zen Buddhist philosophy informs the structure of my approach to coaching. I’ve worked with several clients to create sustainable strategies for achieving both short and long term life goals. Before developing actionable goals, I listen deeply and without judgement. When appropriate, I offer insights grounded in honesty, vulnerability and mindfulness that facilitate my clients to develop the tools they need to better process many kinds of life’s stressors. Over a series of sessions tailored to the needs of my clients, my objective is to disentangle any cognitive dissonance that otherwise inhibits self acceptance and self love to promote proactive, concrete lifestyle choices. If you’re interested in some of these ideas and want to learn more about the services I offer, please contact me to schedule a free, 30-minute introductory and informational session.
+          </ToggleTruncation>
+        </p>
+      </div>
+    </>),
   },
   {
     displayName: 'contact',
@@ -45,13 +51,15 @@ const LifeCoaching = () => {
       </div>
       <div className={styles.menuBar}>
         {navOptions.map((option, i) =>
+        <div className={styles.contentWrapper}>
           <div onClick={() => handleClick(i)} className={classnames(styles.menuItem, currentIndex === i && styles.currentTab)}>
             {option.displayName}
           </div>
+          <div className={classnames(styles.content, i === currentIndex && styles.showContent)}>
+           {navOptions[i].description}
+          </div>
+        </div>
         )}
-      </div>
-       <div className={styles.content}>
-          {navOptions[currentIndex].description}
       </div>
       <div className={styles.backButtonWrapper}>
         <BacktoHomeButton />

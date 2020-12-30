@@ -26,6 +26,9 @@
 
 .leftColumn {
     grid-column: 1/5;
+    @include min-width(large) {
+        height: 80vh;
+    }
 }
 
 .menuBar {
@@ -34,20 +37,36 @@
     @include max-width(large) {
         padding-bottom: 20px;
     }
+    position: relative;
 }
 
 .menuItem {
     cursor: pointer;
     padding-right: 20px;
+    padding-bottom: 20px;
     font-size: 18px;
     text-transform: capitalize;
 }
 
 .content {
+    display: none;
     position: relative;
     grid-column: 5/13;
     animation: fadein .8s ease forwards;
     //animation: 1s ease-out 1s 0 fadein;
+    button {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-family: 'Lato';
+        background: transparent;
+    }
+
+
+
+    position: absolute;
+    left: 0;
+    width: 100%;
 }
 
 .currentTab {
@@ -56,8 +75,10 @@
 }
 
 .container {
+    min-height: 100vh;
     @include min-width(large) {
         padding: 60px 30px;
+        min-height: initial;
     }
 }
 
@@ -81,4 +102,12 @@
     bottom: 30px;
     width: 80%;
     left: 30px;
+}
+
+.showContent {
+    display: block;
+}
+
+.contentWrapper {
+    //position: relative;
 }

@@ -11,11 +11,11 @@ const ExpandableListings = ({ list }) => {
         }
     }
     return (
-        <div className={styles.container}>
+        <ul className={styles.container}>
         {list.map((item, i) =>
         <ExpandableListing item={item} />
         )}
-      </div>
+      </ul>
     )
 }
 

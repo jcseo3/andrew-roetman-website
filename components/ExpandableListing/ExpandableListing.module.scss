@@ -2,10 +2,11 @@
 
 .wrapper {
     border-bottom: 1px solid black;
-    padding: 0 20px;
+    //padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    //align-items: center;
     @include max-width(medium) {
         font-size: 12px;
     }
@@ -16,15 +17,16 @@
     position: relative;
     display: flex;
     align-items: center;
+    font-family: 'Roboto';
 }
 
 .arrow {
     content: '';
     position: absolute;
     right: 0;
-    width: 10px;
-    height: 10px;
-    border: 2px solid black;
+    width: 6px;
+    height: 6px;
+    border: 1px solid black;
     margin-left: 10px;
     transform: rotate(45deg);
     border-left: 0;
@@ -32,7 +34,7 @@
 }
 
 .rotate {
-    border: 2px solid black;
+    border: 1px solid black;
     border-right: 0;
     border-bottom: 0;
 }
@@ -67,4 +69,12 @@
             display: none;
         }
     }
+}
+
+.icon {
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+    padding-right: 20px;
 }

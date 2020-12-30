@@ -24,7 +24,6 @@ const Writing = () => {
     return (
       <div className={styles.container}>
         <div className={styles.wrapper}>
-          <div className={styles.title}>Writings</div>
           <div className={styles.content}>
             <ExpanableListings list={writings} />
           </div>
@@ -35,3 +34,5 @@ const Writing = () => {
 }
 
 export default Writing;
+
+//<div className={styles.title}>Writings</div>
