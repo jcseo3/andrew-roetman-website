@@ -2,7 +2,6 @@
 
 .textWrapper {
     position: absolute;
-    //animation: 1s ease-out 1s 0 fadein;
     font-size: 20px;
     background: white;
     opacity: 0.7;
@@ -13,17 +12,7 @@
     transform: translateY(-50%);
 
     @include min-width(medium) {
-        /*transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;*/
         padding: 35px 30px;
-    }
-    @include max-width(medium) {
-        /*top: 20%;
-        left: 5%;
-        right: 5%;*/
-        /*top: 50%;
-        transform: translateY(-50%);*/
     }
 }
 
@@ -58,6 +47,7 @@
     position: relative;
     grid-column: 5/13;
     animation: fadein .8s ease forwards;
+    //animation: 1s ease-out 1s 0 fadein;
 }
 
 .currentTab {
