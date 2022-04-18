@@ -1,44 +1,39 @@
-import Head from 'next/head'
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from './Home.module.scss';
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./Home.module.scss";
 
 const Home = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.leftColumn}>
-          <div className={styles.globalTitle}>
-            Andrew Roetman
-          </div>
+        <div className={styles.globalTitle}>Andrew Roetman</div>
         <div className={styles.links}>
           <div className={styles.link}>
             <Link href="/clinical-psychology">
-              <a>
-                Prospective Clinical Psychology Ph.D. Candidate
-              </a>
+              <a>Clinical Psychology</a>
             </Link>
           </div>
           <div className={styles.link}>
             <Link href="/life-coaching" className={styles.link}>
-              <a>
-                Life Coach
-              </a>
+              <a>Life Coach</a>
             </Link>
           </div>
           <div className={styles.link}>
             <Link href="/writing" className={styles.link}>
-              <a>
-                Writings
-              </a>
+              <a>Writings</a>
             </Link>
           </div>
         </div>
       </div>
       <div className={styles.globalImageWrapper}>
-          <img src="/images/tea-hand.jpg" alt="a man's hand is holding out tea as an offer"/>
-        </div>
+        <img
+          src="/images/tea-hand.jpg"
+          alt="a man's hand is holding out tea as an offer"
+        />
+      </div>
     </div>
-  )
+  );
   /*
   <Image src="/images/tea-hand.jpg" alt="a man's hand is holding out tea as an offer" width={500} height={500} />
   
@@ -102,7 +97,6 @@ const Home = () => {
       </footer>
     </div>
   )*/
-}
+};
 
-
-export default Home; 
+export default Home;

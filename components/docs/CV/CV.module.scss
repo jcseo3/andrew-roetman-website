@@ -1,6 +1,37 @@
-@import '../../../styles/sharedStyles.scss';
+@import "../../../styles/sharedStyles.scss";
 
 .wrapper {
-    padding: 20px 30px;
-    margin: 0 30px;
+  padding: 20px 30px;
+  margin: 0 30px;
+
+  h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+}
+
+.headerWrapper {
+  h1 {
+    margin: 0;
+  }
+}
+
+.introText {
+  padding: 30px 0;
+
+  h2 {
+    margin-bottom: 5px;
+  }
+}
+
+.section {
+  padding-bottom: 30px;
+
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    margin: 5px 0;
+  }
 }

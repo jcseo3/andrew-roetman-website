@@ -1,84 +1,66 @@
-@import '../../styles/sharedStyles.scss';
-  
+@import "../../styles/sharedStyles.scss";
+
 .outerWrapper {
-    grid-gap: 0;
-    /*background: color(white-soft);
-    padding: 0;*/
-    @include max-width(medium) {
-        /*background: #ff3627;
-        color: white;*/
-    }
+  grid-gap: 0;
 }
 
 .portrait {
-    display: block;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    object-position: 20% 10%;
-    border-radius: 50%;
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 20% 10%;
+  border-radius: 50%;
 }
 
 .introduction {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .container {
-    z-index: 9;
-    font-size: 20px;
-    //animation: expand .8s ease forwards;
-  
-    /* vertical alignment */
-    display: flex;
-    //justify-content: center;
-    flex-direction: column;
-    //display: flex;
-    //justify-content: initial;
-    //padding-top: 30px;
+  z-index: 9;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
 
-    img {
-        align-self: center;
-        //filter: grayscale(1);
-    }
+  img {
+    align-self: center;
+  }
 }
 
 .wrapper {
-    grid-column: 1/5;
-    @include min-width(large) {
-        /*padding-top: 60px;
-        margin-top: 60px;*/
-        padding: 60px 30px;
-        position: relative;
-        //background: color(white-soft);
-        //background: #3b444b;
-        background: #414a4c;
-        color: white;
-        border-radius: 10px;
-    }
+  grid-column: 1/5;
+  @include min-width(large) {
+    padding: 60px 30px;
+    position: relative;
+    background: #414a4c;
+    color: white;
+    border-radius: 10px;
+  }
 }
 
 .cvLink {
-    font-size: 16px;
-    a {
-        text-decoration: underline;
-    }
+  font-size: 16px;
+  a {
+    text-decoration: underline;
+  }
 }
 
 .backButtonWrapper {
-    position: absolute;
-    bottom: 30px;
-    width: 100%;
-    left: 30px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  left: 30px;
 }
 
 .rightColumn {
-    position: relative;
-    grid-column: 5/13;
-    display: none;
+  position: relative;
+  grid-column: 5/13;
+  display: none;
 
-    @include min-width(large) {
-        background: color(white-soft);
-        border-radius: 10px;
-        display: block;
-    }
+  @include min-width(large) {
+    background: color(white-soft);
+    border-radius: 10px;
+    display: block;
+  }
 }
